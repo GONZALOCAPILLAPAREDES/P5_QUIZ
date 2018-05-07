@@ -1,0 +1,16 @@
+
+<h1>
+    List de quizzes
+</h1>
+
+<table>
+    <% for (var i in quizzes) { %>
+    <% var quiz = quizzes[i]; %>
+    <% var n = +i+1;%>
+    <tr>
+        <td>
+            Pregunta Número <%=n%> = <%= quiz.question %> : <%= quiz.answer %>
+        </td>
+    </tr>
+    <% } %>
+</table>
